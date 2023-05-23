@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    background-image: linear-gradient(45deg,#08080A,#161E1F);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#start,#cpu {
+    padding: 30px 50px;
+    margin: 10px;
+    width: 50vw;
+    text-align: center;
+    color: #41656A;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px #171E1F;
+    transition: background-color .3s;;
+}
+
+#start:active {
+    background-color: #1E1E21;
+}
+
+#cpu:active {
+    background-color: #1E1E21;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tic tac toe</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="Names" id="h2">
+        <h2 id="notCurrent"></h2>
+        <h2 id="notCurrent"></h2>
+        <h2 class="winnerInitial-state" id="winner"></h2>
+    </div>
+    <div class="Game">
+        <div id="reset"><i class="fa fa-refresh"></i></div>
+        <div id="back"><i class="fa fa-home"></i></div>
+    </div>
+  <div id="board">
+    <div class="row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <hr class="Line" id="winLine">
+  </div>
+  <script src="scripts/board.js" type="module"></script>
+  <script src="cpu.js" type="module"></script>
+</body>
+
+</html>

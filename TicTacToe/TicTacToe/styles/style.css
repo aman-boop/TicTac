@@ -1,0 +1,108 @@
+body {
+  background-image: linear-gradient(45deg,#1A2128,#0A0A0F);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0px;
+  height: 100vh;
+}
+
+.winnerTarget-state {
+    opacity: 0.9;
+    color: yellow;
+}
+
+.winnerInitial-state {
+    opacity: 0.0;
+}
+
+#Player_1 {
+    color: #FF0404;
+}
+
+#Player_2 {
+    color: #04A6FF;
+}
+
+#PlayersInitial {
+    color: white;
+}
+
+#board,
+.cell,
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 1px 4px 1px #3B3C42;
+}
+
+#board { 
+  flex-flow: row wrap;
+  margin: 190px 200px;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.Line {
+   position: absolute;
+   display: none;
+   height: 2px;
+   border-radius: 10px;
+}
+
+.cell {
+  margin: 5px;
+  width: 20vw;
+  height: 10vh;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
+.Game {
+    position: absolute;
+    left: 320px;
+    top: 25px;
+    backdrop-filter: blur(10px);
+}
+
+#reset,#back {
+    padding: 20px;
+    margin-bottom: 10px;
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px #333439;
+}
+
+#back {
+    color: #2B3380;
+}
+
+#winner {
+  position: relative;
+  top: 30px;
+  left: 30;
+  text-align: center;
+  border-radius: 10px;
+  transition-property: color opacity;
+  transition-duration: 1s;
+}
+
+#current {
+    color: #0A9ECA;
+}
+
+#notCurrent {
+    color: #1E1E21;
+}
+
+.Names {
+    position: absolute;
+    left: 50px;
+    color: whitesmoke;
+}
